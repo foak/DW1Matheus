@@ -2,81 +2,100 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" >
-  <title>Wireframe da Barra de Navegação</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     
 </head>
+<h1 class="text-center">Formulario de Cadastro - Wireframe - Capri Festas</h1>
+<div class="container">
+    <table class="table table-striped">
+       <tbody>
+          <tr>
+              <td colspan="1">
+                  <form class="well form-horizontal">
+                     <fieldset>
+                        <div class="form-group">
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><input id="fullName" name="fullName" placeholder="Nome Completo" class="form-control" required="" value="" type="text"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><input id="email" name="email" placeholder="Email" class="form-control" required="" value="" type="email"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <div class="col-md-8 inputGroupContainer">
+                              <div class="input-group"><input id="phoneNumber" name="phoneNumber" placeholder="Telefone" class="form-control" required="" value="" type="number"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-8 inputGroupContainer">
+                                <select name="estados-brasil" class="form-control">
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                  </select>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                         <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+                            <label class="custom-control-label" for="customRadio1">Masculino</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">Feminino</label>
+                          </div>  
+                        </div>    
+                        <div class="form-group">
+                            <div class="col-md-8 inputGroupContainer">
+                               <div class="input-group"><input id="fullName" name="fullName" placeholder="Dt Nascimento" class="form-control" required="true" value="" type="text"></div>
+                            </div>
+                         </div>                                                                   
 
-<body>
-<form>
-  <fieldset>
-    <legend>Legend</legend>
-    <div class="form-group">
-      <label for="Nome">Nome</label>
-      <input type="text" class="form-control" id="nome" aria-describedby="Nome" placeholder="Nome">
-    </div>
-    <div class="form-group">
-      <label for="Email">E-mail</label>
-      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="email@email.com">
-    </div>
-    <div class="form-group">
-      <label for="Estado">Selecione o Estado</label>
-      <select class="form-control" id="exampleSelect1">
-          <option value="AC">Acre</option>
-          <option value="AL">Alagoas</option>
-          <option value="AP">Amapá</option>
-          <option value="AM">Amazonas</option>
-          <option value="BA">Bahia</option>
-          <option value="CE">Ceará</option>
-          <option value="DF">Distrito Federal</option>
-          <option value="ES">Espírito Santo</option>
-          <option value="GO">Goiás</option>
-          <option value="MA">Maranhão</option>
-          <option value="MT">Mato Grosso</option>
-          <option value="MS">Mato Grosso do Sul</option>
-          <option value="MG">Minas Gerais</option>
-          <option value="PA">Pará</option>
-          <option value="PB">Paraíba</option>
-          <option value="PR">Paraná</option>
-          <option value="PE">Pernambuco</option>
-          <option value="PI">Piauí</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="RN">Rio Grande do Norte</option>
-          <option value="RS">Rio Grande do Sul</option>
-          <option value="RO">Rondônia</option>
-          <option value="RR">Roraima</option>
-          <option value="SC">Santa Catarina</option>
-          <option value="SP">São Paulo</option>
-          <option value="SE">Sergipe</option>
-          <option value="TO">Tocantins</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="Telefone">Telefone</label>
-      <input type="text" class="form-control" id="nome" aria-describedby="telefone" placeholder="Nome">
-    </div>
-    <fieldset class="form-group">
-      <legend>Sexo</legend>
-      <div class="form-check">
-        <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-          Masculino
-        </label>
-      </div>
-      <div class="form-check">
-      <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-          Feminino
-        </label>
-      </div>
-    </fieldset>
-    <div class="form-group">
-      <label for="DataNascimento">Data de Nascimento</label>
-      <input type="text" class="form-control" id="dtnasc" aria-describedby="DataNascimento" placeholder="Data de Nascimento">
-    </div>    
-</form>
-</body>
+                        
+
+                     </fieldset>
+                     <input class="btn btn-primary" type="submit" value="Enviar">
+                  </form>
+               </td>
+          </tr>
+         
+       </tbody>
+    </table>
+    
+
+ </div>
+
+ 
+
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
